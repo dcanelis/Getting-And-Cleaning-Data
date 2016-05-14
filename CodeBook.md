@@ -2,20 +2,16 @@
 ##run_analysis.R
 R script called run_analysis.R has the following requirements:
 
-*Merges the training and the test sets to create one data set.
+* Merges the training and the test sets to create one data set.
+* Extracts only the measurements on the mean and standard deviation for each measurement.
+* Uses descriptive activity names to name the activities in the data set
+* Appropriately labels the data set with descriptive variable names.
+* From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-*Extracts only the measurements on the mean and standard deviation for each measurement.
-
-*Uses descriptive activity names to name the activities in the data set
-
-*Appropriately labels the data set with descriptive variable names.
-
-*From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-
-** Run_analysis.R performs the following:
+Run_analysis.R performs the following:
 * downloads required data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-* unzips the file if it has not been uncompressed
-* creates results folder if it does not exist (all files are stored in this folder)
+* unzips the file if needed
+* creates results folder if it does not exist
 * loads features.txt used for columns
 * loads X_train.txt, y_train.txt, subject_train.txt
 * X_train contains the data using the feature data set as columns
